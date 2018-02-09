@@ -14,7 +14,8 @@ public void doodle(int x,int y,int step){
   fill((float)( Math.random()*255),(float)( Math.random()*255),(float)( Math.random()*255));
   ellipse(x,y,step, step);
   if (step<10)
-    System.out.println("shutup");
+    //System.out.println("shutup");
+  step=10;
    else{
      doodle(x-14,y-3,step-20);
    doodle((int) x/2,(int)y/3, (int)step/12);
